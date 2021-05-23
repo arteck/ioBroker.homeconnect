@@ -1,98 +1,121 @@
 {
-    "common": {
-        "name": "homeconnect",
-        "version": "0.0.32",
-        "news": {
-            "0.0.32": {
-                "en": "bugfix for devices that are completely switched off (e.g. washing machine, dryer)"
-            },   
-            "0.0.31": {
-                "en": "fix pause start command bug"
-            },     
-            "0.0.30": {
-                "en": "fix js controller 3 issues"
-            },            
-
-            "0.0.27": {
-                "en": "improve option selecting"
-            },
-            "0.0.26": {
-                "en": "fix boolean settings"
-            },
-            "0.0.25": {
-                "en": "fix compact mode, reduce query per minute to prevent too much request error"
-            },
-            "0.0.24": {
-                "en": "improve error messaging"
-            },
-            "0.0.23": {
-                "en": "improve error messaging"
-            }
-        },
-        "title": "Home Connect",
-        "titleLang": {
-            "en": "BSH Home-Connect Adapter",
-            "de": "BSH Home-Connect Adapter",
-            "ru": "Адаптер шаблонов на основе Javascript / Node.js",
-            "pt": "Adaptador de modelo baseado em Javascript / Node.js",
-            "nl": "Javascript / Node.js gebaseerde sjabloonadapter",
-            "fr": "Javascript / Node.js basé adaptateur de modèle",
-            "it": "Adattatore modello basato su Javascript / Node.js",
-            "es": "Adaptador de plantilla basado en JavaScript / Node.js"
-        },
-        "desc": {
-            "en": "ioBroker Homeconnect",
-            "de": "ioBroker Homeconnect",
-            "ru": "ioBroker Homeconnect как образец",
-            "pt": "Modelo de adaptador para o ioBroker",
-            "fr": "ioBroker adaptateur modèle",
-            "nl": "ioBroker Homeconnect",
-            "it": "Adattatore modello ioBroker",
-            "es": "Adaptador de plantilla ioBroker"
-        },
-        "authors": [
-            "dna909 <dna909@googlemail.com>"
-        ],
-        "platform": "Javascript/Node.js",
-        "mode": "daemon",
-        "icon": "homeconnect.png",
-        "materialize": true,
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.homeconnect/master/admin/homeconnect.png",
-        "keywords": [
-            "homeconnect",
-            "vis",
-            "GUI",
-            "graphical",
-            "scada"
-        ],
-        "readme": "https://github.com/iobroker-community-adapters/ioBroker.homeconnect/blob/master/README.md",
-        "loglevel": "info",
-        "type": "household",
-        "compact": true,
-        "license": "MIT",
-        "connectionType": "cloud",
-        "dataSource": "push",
-        "messagebox": false,
-        "plugins": {
-            "sentry": {
-                "dsn": "https://0d0cad2f2cc44d5e889a2bd7ee0fcc42@sentry.iobroker.net/65"
-            }
-        },
-        "dependencies": [
-            {
-                "admin": ">=3.0.0"
-            },
-            {
-                "js-controller": ">=1.4.2"
-            }
-        ]
+  "common": {
+    "name": "homeconnect",
+    "version": "0.0.32",
+    "news": {
+      "0.0.32": {
+        "en": "bugfix for devices that are completely switched off (e.g. washing machine, dryer)"
+      },
+      "0.0.31": {
+        "en": "fix pause start command bug"
+      },
+      "0.0.30": {
+        "en": "fix js controller 3 issues"
+      },
+      "0.0.27": {
+        "en": "improve option selecting"
+      },
+      "0.0.26": {
+        "en": "fix boolean settings"
+      },
+      "0.0.25": {
+        "en": "fix compact mode, reduce query per minute to prevent too much request error"
+      },
+      "0.0.24": {
+        "en": "improve error messaging"
+      },
+      "0.0.23": {
+        "en": "improve error messaging"
+      }
     },
+    "title": "Home Connect",
+    "titleLang": {
+      "en": "BSH Home-Connect Adapter",
+      "de": "BSH Home-Connect Adapter",
+      "ru": "Адаптер шаблонов на основе Javascript / Node.js",
+      "pt": "Adaptador de modelo baseado em Javascript / Node.js",
+      "nl": "Javascript / Node.js gebaseerde sjabloonadapter",
+      "fr": "Javascript / Node.js basé adaptateur de modèle",
+      "it": "Adattatore modello basato su Javascript / Node.js",
+      "es": "Adaptador de plantilla basado en JavaScript / Node.js"
+    },
+    "desc": {
+      "en": "ioBroker Homeconnect",
+      "de": "ioBroker Homeconnect",
+      "ru": "ioBroker Homeconnect как образец",
+      "pt": "Modelo de adaptador para o ioBroker",
+      "fr": "ioBroker adaptateur modèle",
+      "nl": "ioBroker Homeconnect",
+      "it": "Adattatore modello ioBroker",
+      "es": "Adaptador de plantilla ioBroker"
+    },
+    "authors": [
+      "dna909 <dna909@googlemail.com>"
+    ],
+    "platform": "Javascript/Node.js",
+    "mode": "daemon",
+    "icon": "homeconnect.png",
+    "materialize": true,
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.homeconnect/master/admin/homeconnect.png",
+    "keywords": [
+      "homeconnect",
+      "vis",
+      "GUI",
+      "graphical",
+      "scada"
+    ],
+    "readme": "https://github.com/iobroker-community-adapters/ioBroker.homeconnect/blob/master/README.md",
+    "loglevel": "info",
+    "type": "household",
+    "compact": true,
+    "license": "MIT",
+    "connectionType": "cloud",
+    "dataSource": "push",
+    "messagebox": false,
+    "plugins": {
+      "sentry": {
+        "dsn": "https://0d0cad2f2cc44d5e889a2bd7ee0fcc42@sentry.iobroker.net/65"
+      }
+    },
+    "dependencies": [
+      {
+        "admin": ">=3.0.0"
+      },
+      {
+        "js-controller": ">=1.4.2"
+      }
+    ],
+    "installedFrom": "iobroker.homeconnect@0.0.32"
+  },
     "native": {
-        "clientID": "",
-        "scope": "",
-        "authUri": "",
-        "resetAccess": false
+      "clientID": "",
+      "scope": "",
+      "authUri": "",
+      "resetAccess": false
     },
-    "objects": []
+
+    "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "If connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
